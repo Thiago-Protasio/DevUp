@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.textEllipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.toggle-bg:after {
+    content: '';
+    @apply absolute top-0.5 left-0.5 bg-white border border-gray-300 rounded-full h-5 w-5 transition shadow-sm;
+}
+
+input:checked + .toggle-bg:after {
+    transform: translateX(100%);
+    @apply border-white;
+}
+
+input:checked + .toggle-bg {
+    @apply bg-indigo-700 border-indigo-700;
+}
