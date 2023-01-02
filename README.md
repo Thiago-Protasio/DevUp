@@ -1,7 +1,5 @@
 # DevUp
 
-### Video demo: https://youtu.be/4CldSFFemZ0
-***
 ## Description:
 
 This is a web application where developers can find and apply for jobs, and companies can post job opportunities and look for candidates.
